@@ -3,31 +3,49 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
-/* title bar */
-
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* bootstrap style */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* section colors */
+
+.colored-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* headings */
+
+.big-heading {
     font-weight: 900;
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
-h2 {
-    font-family: "Montserrat";
-    font-weight: 700;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-.container-fluid {
-    padding: 3% 15% 7%;
-}
+/* title bar */
 
-#title {
-    background-color: #ff4c68;
-    color: white;
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 15% 7%;
 }
 
 #iphone-img {
@@ -70,19 +88,14 @@ h2 {
 
 #features {
     position: relative;
-    background-color: #fff;
-    padding: 7% 15%;
     z-index: 1; /* No need actually coz Stacking order */
 }
 
 .h3-features {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .div-features {
-    text-align: center;
     padding: 5%;
 }
 
@@ -103,9 +116,12 @@ h2 {
 /* testimonial section */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -114,13 +130,10 @@ h2 {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
+/* press */
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -133,7 +146,11 @@ h2 {
 
 #pricing {
     padding: 100px;
-    text-align: center;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-col {
@@ -142,21 +159,27 @@ h2 {
 
 /* cta */
 
-#cta {
-    background-color: #ef8172;
-    text-align: center;
-    color: white;
+
+
+/* footer */
+
+#footer {
+    background-color: #fff;
+    color: #8f8f8f;
 }
 
+.footer-icon {
+    margin: 20px 10px;
+}
 
 /* media query */
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
     #iphone-img {
         position: static;
         transform: rotate(0);
     }
-    #title {
+    #title .container-fluid {
         text-align: center;
     }
 }
